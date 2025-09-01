@@ -1,0 +1,27 @@
+GET http://localhost:5000/user
+
+###
+GET http://localhost:5000/user/6
+
+###
+POST  http://localhost:5000/user
+Content-Type: application/json
+
+{
+    "username": "Boy Sony",
+    "email": "boy@gmail.com",
+    "gender": "male"
+}
+
+###
+PATCH http://localhost:5000/user/6
+Content-Type: application/json
+
+{
+    "username": "Doni Fery",
+    "email": "doni@gmail.com",
+    "gender": "male"
+}
+
+###
+DELETE http://localhost:5000/user/11
